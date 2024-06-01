@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  .homepage {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #a463ff;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  nav a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #333;
+  }
+  
+  nav a:hover {
+    background-color: #333;
+  }
+  
+  .power-off {
+    margin-top: auto;
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a463ff;
+    padding: 10px 20px;
+  }
+  
+  .tabs {
+    display: flex;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .tabs button:hover {
+    background-color: #8331ff;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .content-box {
+    background-color: #333;
+    height: 150px;
+    border: 2px solid #a463ff;
+  }
+  
+  .content-box.green {
+    background-color: green;
+  }
+  
+  .content-box.red {
+    background-color: red;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .main-content {
+      padding-top: 60px;
+    }
+  
+    .content-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
