@@ -1,22 +1,23 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import HomePage from './components/Homepage.jsx';
-import BigShots from './components/BigShots.jsx';
-import Maps from './components/Maps.jsx';
-import FranPride from './components/FranPride.jsx';
+// App.jsx
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import MainContent from './components/MainContent';
+import RightPanel from './components/RightPanel';
+import './App.css';
 
 function App() {
+  const [isRightPanelOpen, setIsRightPanelOpen] = useState(false);
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<HomePage />}>
-          <Route path="bigshots" element={<BigShots />} />
-          <Route path="maps" element={<Maps />} />
-          <Route path="franpride" element={<FranPride />} />
-          {/* <Route path="*" element={<Navigate to="/bigshots" />} /> */}
-        </Route>
-      </Routes>
-    </Router>
+    <div className="app">
+      <Navbar />
+      <div className="main-container">
+        <Sidebar />
+        <MainContent />
+        <RightPanel isOpen={isRightPanelOpen} setIsOpen={setIsRightPanelOpen} />
+      </div>
+    </div>
   );
 }
 

@@ -1,0 +1,118 @@
+
+/* App.css */
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  .main-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  /* Navbar.css */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #7c3aed;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  /* Sidebar.css */
+  .sidebar {
+    width: 200px;
+    padding: 1rem;
+    background-color: #2a2a2a;
+  }
+  
+  .sidebar-btn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* MainContent.css */
+  .main-content {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 1rem;
+  }
+  
+  .tab {
+    padding: 0.5rem 1rem;
+    background-color: #3a3a3a;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    background-color: #7c3aed;
+  }
+  
+  .content-area {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .video-player {
+    aspect-ratio: 16 / 9;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .play-button {
+    font-size: 3rem;
+  }
+  
+  /* RightPanel.css */
+  .right-panel {
+    width: 50px;
+    transition: width 0.3s ease;
+  }
+  
+  .right-panel.open {
+    width: 300px;
+  }
+  
+  .toggle-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3a3a3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .friends-list {
+    padding: 1rem;
+    background-color: #2a2a2a;
+    height: 100%;
+  }

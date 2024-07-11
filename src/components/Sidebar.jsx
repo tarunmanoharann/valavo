@@ -1,22 +1,15 @@
+// components/Sidebar.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaPowerOff } from 'react-icons/fa';
+// import './Sidebar.css';
 
-
-const Sidebar = () => {
+function Sidebar() {
   return (
     <div className="sidebar">
-      <div className="logo">Valavo</div>
-      <nav>
-        <Link to="/bigshots">BigShots</Link>
-        <Link to="/maps">Maps</Link>
-        <Link to="/franpride">FranPride</Link>
-      </nav>
-      <div className="power-off">
-        <FaPowerOff />
-      </div>
+      <button className="sidebar-btn">BigShots</button>
+      <button className="sidebar-btn">Maps</button>
+      <button className="sidebar-btn">FranPride</button>
     </div>
   );
-};
+}
 
 export default Sidebar;
